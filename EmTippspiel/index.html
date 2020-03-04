@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script src="javascript/server_request.js"></script>
+    </head>
+    <body>
+
+        <form>
+            Username: 
+            <input type="text" id="username"/><br>
+            Password:
+            <input type="password" id="pwd"/><br>
+            <input type="button" onclick="login_req(document.getElementById('username').value, 
+                                                    document.getElementById('pwd').value)" value="Login">
+        </form>
+        <div id="login_response"></div><br>
+        <form>
+            Username: 
+            <input type="text" id="reg_username"/><br>
+            Password:
+            <input type="password" id="reg_pwd"/><br>
+            <input type="button" onclick="register_req(document.getElementById('reg_username').value, 
+                                                    document.getElementById('reg_pwd').value)" value="Register">
+        </form>
+        <div id="register_response"></div><br>
+    </body>
+</html>
